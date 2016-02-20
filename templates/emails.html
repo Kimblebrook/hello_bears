@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pool Party email addresses</title>
+  </head>
+  <body>
+    <p>Here are all the emails we have collected:</p>
+    <ul>
+      {% for email in email_addresses %}
+      <li>{{ email }}</li>
+      {% endfor %}
+    </ul>
+    <p>THIS IS GONNA ROCK!</p>
+    <a href="/">Okay, take me back to the party.</a>
+  </body>
+</html>
