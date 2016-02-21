@@ -1,6 +1,10 @@
 from flask import Flask, render_template, request, redirect
+from flask_analytics import Analytics
 
 app = Flask(__name__)
+Analytics(app)
+
+app.config['GOOGLE_ANALYTICS']['ACCOUNT'] = 'UA-74115815-1'
 
 email_addresses = []
 
@@ -16,9 +20,7 @@ def signup():
 
 @app.route('/')
 def hello_world():
-    author = 'Stewart'
-    name = 'Gill'
-    return render_template('index.html', author=author, name=name)
+    return render_template('index.html')
 
 if __name__ == '__main__':
     app.run()

@@ -1,4 +1,5 @@
 Flask==0.10.1
+Flask-Analytics==0.5.2
 gunicorn==19.4.5
 itsdangerous==0.24
 Jinja2==2.8
