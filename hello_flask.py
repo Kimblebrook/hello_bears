@@ -4,7 +4,7 @@ from flask_analytics import Analytics
 app = Flask(__name__)
 Analytics(app)
 
-app.config['GOOGLE_ANALYTICS']['ACCOUNT'] = 'UA-74115815-1'
+app.config['ANALYTICS']['GOOGLE_ANALYTICS']['ACCOUNT'] = 'UA-74115815-1'
 
 email_addresses = []
 
