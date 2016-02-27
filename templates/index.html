@@ -73,5 +73,14 @@
             <input type="submit" value="Who has signed up?">
         </form>
     </div>
+    <div id="emailform">
+        <p id="showclientId"></p>
+    </div>
+    <script>
+      ga(function(tracker) {
+        var clientId = tracker.get('clientId');
+      });
+      document.getElementById("showclientID").innerHTML = clientId;
+    </script>
   </body>
 </html>
