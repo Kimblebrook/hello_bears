@@ -1,10 +1,11 @@
 from flask import Flask, render_template, request, redirect
-from flask_analytics import Analytics
+# from flask_analytics import Analytics
 
 app = Flask(__name__)
-Analytics(app)
 
-app.config['ANALYTICS']['GOOGLE_ANALYTICS']['ACCOUNT'] = 'UA-74115815-1'
+# Analytics(app)
+
+# app.config['ANALYTICS']['GOOGLE_ANALYTICS']['ACCOUNT'] = 'UA-74115815-1'
 
 email_addresses = []
 
