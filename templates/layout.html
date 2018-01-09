@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bears Everywhere!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}" />
+
+    <!-- Custom styles for this template -->
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/landing-page.css') }}" />
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-light bg-light static-top">
+      <div class="container">
+        <a class="navbar-brand" href="/">Bear Party</a>
+        <form action="/emails" method="get">
+                  <input type="submit" class="btn btn-primary" value="Who's In?">
+        </form>
+      </div>
+    </nav>
+
+  </head>
+{% block body %}{% endblock %}

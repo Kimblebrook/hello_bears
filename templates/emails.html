@@ -1,17 +1,21 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Pool Party email addresses</title>
-       {{ analytics }}
-  </head>
-  <body>
-    <p>Here are all the emails we have collected:</p>
-    <ul>
-      {% for email in email_addresses %}
-      <li>{{ email }}</li>
-      {% endfor %}
-    </ul>
-    <p>THIS IS GONNA ROCK!</p>
-    <a href="/">Okay, take me back to the party.</a>
-  </body>
-</html>
+{% extends "layout.html" %}
+{% block body %}
+  <title>Pool Party email addresses</title>
+  <section class="testimonials text-center">
+    <div class="container p-0">
+      <h2 class="mb-5">Here are all the emails we have collected:</h2>
+        <ul class="list-group">
+          {% for email in email_addresses %}
+          <li class="list-group-item">{{ email }}</li>
+          {% endfor %}
+        </ul>
+    </div>
+  </section>
+  <section class="testimonials text-center">
+    <div class="container p-0">
+      <h2 class="mb-5">THIS IS GONNA ROCK!</h2>
+      <a class="btn btn-primary" href="/">Okay, take me back to the party.</a>
+    </div>
+  </section>
+
+{% endblock %}
