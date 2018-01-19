@@ -1,8 +1,11 @@
 from flask import Flask, render_template, request, redirect
+from snowplow_tracker import Subject, Emitter, Tracker
 
 app = Flask(__name__)
 
 email_addresses = []
+e = Emitter("localhost:8080", namespace="python", app_id="hello_bears")
+t = Tracker(e)
 
 
 @app.route('/emails', methods=['GET'])
