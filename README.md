@@ -28,7 +28,7 @@ Taking input from [here](https://discourse.snowplowanalytics.com/t/how-to-setup-
 
 ## Ideas for what to do next
 
-~- Get self-describing events working~
+- ~Get self-describing events working~
 - Write data to S3
 - Try out Athena
 - Replace Kinesis with Kafka so that we can try out KSQL
