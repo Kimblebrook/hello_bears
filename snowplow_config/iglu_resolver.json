@@ -1,0 +1,28 @@
+{
+  "schema": "iglu:com.snowplowanalytics.iglu/resolver-config/jsonschema/1-0-0",
+  "data": {
+    "cacheSize": 1,
+    "repositories": [
+      {
+        "name": "Iglu Central",
+        "priority": 1,
+        "vendorPrefixes": [ "com.snowplowanalytics" ],
+        "connection": {
+          "http": {
+            "uri": "http://iglucentral.com"
+          }
+        }
+      },
+      {
+        "name": "Hello Bears!",
+        "priority": 0,
+        "vendorPrefixes": [ "com.hellobears" ],
+        "connection": {
+          "http": {
+            "uri": "http://sb-user-bucket.s3-website-eu-west-1.amazonaws.com"
+          }
+        }
+      }
+    ]
+  }
+}
